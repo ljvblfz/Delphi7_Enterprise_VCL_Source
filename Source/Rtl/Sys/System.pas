@@ -6726,6 +6726,13 @@ begin
   Result := _WriteString(t, S, width);
 end;
 
+{ }
+{ @System@@Write0Long$qqrr15System@TTextReci }
+{ }
+{ xor ecx, ecx }
+{ call @WriteLong }
+{ ret }
+{ }
 function _Write0Long(var t: TTextRec; val: Longint): Pointer;
 begin
   Result := _WriteLong(t, val, 0);
