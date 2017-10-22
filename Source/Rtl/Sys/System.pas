@@ -13096,6 +13096,13 @@ asm
 end;
 
 
+{ }
+{ @System@@Write0LString$qqrr15System@TTextRecx17System@AnsiString }
+{ }
+{ xor ecx, ecx }
+{ call @WriteLString }
+{ ret }
+{ }
 function _Write0LString(var t: TTextRec; const s: AnsiString): Pointer;
 begin
   Result := _WriteLString(t, s, 0);
